@@ -75,8 +75,8 @@ class HomeController extends Controller
 
     public function getMax($string){
 
-        $string = preg_match_all('/([A-Z]{1})/',$string,$foo);
-        return array($string,$foo[0]);
+        $string = preg_match_all('/([A-Z]{1})/',$string,$match);
+        return array($string,$match[0]);
     }
 
 
