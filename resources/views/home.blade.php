@@ -15,7 +15,6 @@
                 </form>
                 </div>
 
-               <?php if(isset($data)){var_dump($data);} ?>
             </div>
         </div>
     </div>

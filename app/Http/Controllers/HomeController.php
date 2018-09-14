@@ -64,13 +64,9 @@ class HomeController extends Controller
         $dato->save();
           
           $datos = Dato::all();
-           /*return Dato::create([
-            'data' =>$result,
-            'user_id'=>$user 
-            ]);*/
-        //return 'estoy aqui';
-            //return Redirect::action('HomeController@index', array( 'data'=>$contents) );
-               return view('showdata', array( 'data'=>$datos));
+
+
+       return view('showdata', array( 'data'=>$datos));
     }
 
     public function showdata(){
